@@ -1,0 +1,15 @@
+.heading{
+      color: grey;
+    }
+    .text{
+      font-family: calibri;
+      font-size: 15px;
+      text-align: justify;
+      color: white;
+    }
+    .image{
+      float: right;
+      width: 175px;
+      height: 160px;
+      padding: 10px;
+    }
