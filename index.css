@@ -1,22 +1,112 @@
-.heading{
-    color: grey;
+body{
+  margin: 0;
 }
 
-.text{
-    font-family: calibri;
+h1{
+  color: lightgray;
+  position: absolute;
+  left: 38%;
+  font-family: candara;
+  font-size: 55px;
+  top: 1%;
+}
+
+main{
+  position: relative;
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  background: black;  /* fallback for old browsers */  
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://stsci-opo.org/STScI-01FMN37V4VGHDJBNEJYZ5RAY70.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://stsci-opo.org/STScI-01FMN37V4VGHDJBNEJYZ5RAY70.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#nav{
+  position: absolute;
+  top: 45%;
+}
+
+#nav h2{
+  text-align: center;
+  font-size: 30px;
+  padding-left: 25px;
+  color: lightgray;
+}
+
+#content{
+  background-image: linear-gradient(to top, #12100E,#2B4162); 
+  padding: 15px;
+  border: none;
+  margin: 0px;
+}
+
+h2{
+    color: gray;
+    font-family: candara;
+}
+
+article p{
+    font-family: candara;
     font-size: 15px;
     text-align: justify;
     color: white;
-}
+} 
 
 .image{
     float: right;
-    width: 175px;
+    width: 225px;
     height: 160px;
-    padding: 10px;
+    padding: 10px 0px 10px 10px;
 }
 
-.HL{
-    text-decoration: none;
-    color: red;
+.links {
+  text-decoration: none;
+  color: red;
+  font-family: candara;
+  display: inline-block;
+  position: relative;
+}
+
+li .links{
+  font-size: 22px;
+}
+
+li{
+  color: red;
+}
+
+.links::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.links:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+footer{
+  background: lightgray;
+  text-align: center;
+  padding-top: 400px;
+}
+
+footer img{
+  width: 25px;
+}
+
+footer p{
+  color: gray;
+  font-family: 'candara';
+  font-size: 12px;
 }
