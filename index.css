@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   margin: 0;
 }
@@ -7,7 +11,7 @@ h1{
   text-align: center;
   font-family: candara;
   font-size: 55px;
-  top: 1%;
+  top: 10%;
 }
 
 main{
@@ -15,7 +19,7 @@ main{
   height: 800px;
   overflow: hidden;
   background: black;  /* fallback for old browsers */  
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cosmosmagazine.com/wp-content/uploads/2022/06/GettyImages-140891305.jpg") repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg") repeat fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -54,12 +58,7 @@ article p{
 .image{
   float: right;
   width: 200px;
-  padding: 8px 0px 8px 10px;
-}
-
-#article1 .image{
-  padding-top: 24px;
-  padding-bottom: 0px;
+  padding: 5px 0px 5px 10px;
 }
 
 .links {
