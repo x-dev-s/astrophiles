@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+h1{
+  color: lightgray;
+  text-align: center;
+  font-family: candara;
+  font-size: 55px;
+  top: 10%;
+}
+
+main{
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  background: black;  /* fallback for old browsers */  
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg") repeat fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#nav{
+  position: absolute;
+  top: 47%;
+}
+
+#nav h2{
+  text-align: center;
+  font-size: 25px;
+  color: lightgray;
+  padding: 0px 15px;
+}
+
+#content{
+  background-image: linear-gradient(to top, #12100E,#2B4162); 
+  padding: 20px 10px;
+  border: none;
+  margin: 0px;
+}
+
+h2{
+  color: gray;
+  font-family: candara;
+}
+
+article p{
+  font-family: candara;
+  font-size: 15px;
+  text-align: justify;
+  color: white;
+} 
+
+.image{
+  float: right;
+  width: 200px;
+  padding: 5px 0px 5px 10px;
+}
+
+.links {
+  text-decoration: none;
+  color: red;
+  font-family: candara;
+  position: relative;
+}
+
+ul .links{
+  font-size: 18px;
+}
+
+li{
+  color: red;
+}
+
+.links::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.links:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*.links:visited::after, .links:visited{
+  color: green;
+  background-color: green;
+}*/
+
+footer{
+  background: lightgray;
+  text-align: center;
+  padding-top: 400px;
+}
+
+footer img{
+  width: 25px;
+}
+
+footer p{
+  color: gray;
+  font-family: 'candara';
+  font-size: 12px;
+}
