@@ -4,8 +4,7 @@ body{
 
 h1{
   color: lightgray;
-  position: absolute;
-  left: 38%;
+  text-align: center;
   font-family: candara;
   font-size: 55px;
   top: 1%;
@@ -13,29 +12,29 @@ h1{
 
 main{
   position: relative;
-  height: 700px;
+  height: 800px;
   overflow: hidden;
   background: black;  /* fallback for old browsers */  
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cosmosmagazine.com/wp-content/uploads/2022/06/GettyImages-140891305.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cosmosmagazine.com/wp-content/uploads/2022/06/GettyImages-140891305.jpg") repeat fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #nav{
   position: absolute;
-  top: 45%;
+  top: 47%;
 }
 
 #nav h2{
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   color: lightgray;
-  padding: 0px 10px;
+  padding: 0px 15px;
 }
 
 #content{
   background-image: linear-gradient(to top, #12100E,#2B4162); 
-  padding: 10px;
+  padding: 20px 10px;
   border: none;
   margin: 0px;
 }
@@ -70,12 +69,12 @@ article p{
   position: relative;
 }
 
-li .links{
-  font-size: 19px;
+ul .links{
+  font-size: 18px;
 }
 
 li{
-  list-style: none;
+  color: red;
 }
 
 .links::after {
