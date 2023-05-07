@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  font-family: candara;
 }
 
 body{
@@ -9,19 +10,16 @@ body{
 h1{
   color: lightgray;
   text-align: center;
-  font-family: candara;
   font-size: 55px;
-  top: 10%;
 }
 
 main{
   position: relative;
-  height: 800px;
-  overflow: hidden;
+  height: 850px;
+  overflow: auto;
   background: black;  /* fallback for old browsers */  
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg") repeat fixed;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #nav{
@@ -45,35 +43,46 @@ main{
 
 h2{
   color: gray;
-  font-family: candara;
+}
+
+#article1 h2{
+  clear: right;
 }
 
 article p{
-  font-family: candara;
   font-size: 15px;
   text-align: justify;
   color: white;
 } 
 
-.image{
+.images{
   float: right;
-  width: 200px;
-  padding: 5px 0px 5px 10px;
+  width: 50%;
+  color: white;
+  padding-left: 10px;
+}
+
+.img{
+  font-size: 14px;
+  margin-bottom: 5%;
+  text-align: center;
+  border: 2px solid lightgray;
+  padding: 2%;
+}
+
+.image{
+  width: 100%;
 }
 
 .links {
   text-decoration: none;
   color: red;
-  font-family: candara;
   position: relative;
-}
-
-ul .links{
-  font-size: 18px;
 }
 
 li{
   color: red;
+  font-size: 17px;
 }
 
 .links::after {
@@ -111,6 +120,74 @@ footer img{
 
 footer p{
   color: gray;
-  font-family: 'candara';
   font-size: 12px;
+}
+
+iframe{
+  border: 2px solid lightgray;
+  width: 60%;
+}
+
+@media (max-width: 425px){
+  main{
+    height: 700px;
+  }
+}
+  
+@media (max-width: 360px){
+  iframe{
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px){
+  iframe{
+    width: 100%;
+    height: 230px;
+  }
+}
+
+@media (min-width:426px) and (max-width: 540px){
+  iframe{
+    height: 250px;
+    width: 85%;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 768px){
+  iframe{
+    height: 300px;
+    width: 75%;
+  }
+  .images{
+    width: 40%;
+  }
+}
+
+@media (min-width:769px) and (max-width: 1024px){
+  iframe{
+    height: 350px;
+  }
+  .images{
+    width: 33.3333%;
+  }
+}
+
+@media (min-width: 769px){
+  .images{
+    width: 25%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+  iframe{
+    height: 400px;
+  }
+}
+
+@media (min-width: 1280px){
+  iframe{
+    height: 450px;
+  }
 }
